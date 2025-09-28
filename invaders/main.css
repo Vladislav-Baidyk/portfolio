@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+}
+#board{
+    background-image: url(pics/bakcground.webp);
+    background-size: cover;
+    margin: 100px 0px 0px 0px;
+}
