@@ -1,0 +1,388 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background:radial-gradient(hsl(214, 47%, 23%),hsl(237, 48%, 15%));
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    gap:250px;
+
+}
+.header{
+    box-sizing: border-box;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid  hsl(246, 11%, 37%);
+    border-radius: 20px;
+    justify-content: space-between;
+
+}
+.score{
+    font-size: 25px;
+    background-color: white;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.scoreSpan{
+    font-weight: 900;
+    font-size: 30px;
+    color:hsl(229, 25%, 31%);
+}
+.gameContainer{
+    display: flex;
+    flex-direction:column;  
+    max-width:100% ;
+    position: relative;
+    height: 200px;
+}
+.triangle{
+
+}
+.paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(230, 89%, 62%);
+    box-shadow: 1px 7px 1px hsl(229, 64%, 46%);
+    position: relative;
+    top:-350px;
+    left:-50px;
+}
+.paper img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.scissors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(39, 89%, 49%);
+    box-shadow: 1px 7px 1px hsl(28, 76%, 44%);
+    position: relative;
+    top:-530px;
+    left:200px;
+}
+.scissors img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.rock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(349, 71%, 52%);
+    box-shadow: 1px 7px 1px hsl(347, 75%, 35%);
+    position: relative;
+    top:-500px;
+    left:70px;
+}
+.rock img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;  
+}
+.rules{
+    position: relative;
+    left:40%;
+    padding: 20px;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color:white;
+    top:-10vh;
+    border:2px solid  white;
+}
+.rules h1{
+    font-size: 20px;
+}
+.rulesShow{
+    position: absolute;
+    left:37%;
+    top:30%;
+    background: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.rulesHeader{
+    display: flex;
+    flex-direction: column;
+}
+.rulesHeaderStart{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.game{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    flex-direction: row;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+.paperGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(230, 89%, 62%);
+    box-shadow: 1px 7px 1px hsl(229, 64%, 46%);
+}
+.paperGame img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;
+}
+.rockGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(349, 71%, 52%);
+    box-shadow: 1px 7px 1px hsl(347, 75%, 35%);
+}
+.rockGame img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.scissorsGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 100px;
+    border: 20px solid hsl(39, 89%, 49%);
+    box-shadow: 1px 7px 1px hsl(28, 76%, 44%);
+}
+.containerGame h1{
+    color:white;
+}
+
+.scissorsGame img{
+    height: 50px;
+    width: 50px;
+    padding: 40px;
+    border-radius: 100px;
+}
+.gameContainer{
+    position: relative;
+    left:15px;
+}
+.playAgain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+
+}
+.playAgain h1{
+    color:white;
+}
+.playButton{
+    color:hsl(349, 71%, 52%);
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:480px) {
+    .header{
+        width: 90%;
+    }
+    .score{
+        width: 100px;
+    }
+
+    .triangle img{
+        width: 300px;
+        
+    }
+   .paper{
+    height: 40px;
+    width: 40px;
+    top:-330px;
+
+    }
+.paper img{
+    height: 40px;
+    width: 40px;
+    padding: 40px;
+    border-radius: 100px;
+}
+.scissors{
+    height: 40px;
+    width: 40px;
+    top:-450px;
+    left:200px;
+}
+.scissors img{
+    height: 40px;
+    width: 40px;
+}
+.rock{
+    height: 40px;
+    width: 40px;
+    top:-350px;
+    left:90px;
+}
+.rock img{
+    height: 40px;
+    width: 40px;
+}
+.rules{
+    left:auto;
+}
+.rulesHeaderStart h1{
+    font-size: 25px;
+}
+.rulesShow{
+    left:auto;
+    top:30%;
+    width: 300px;
+    height: 300px;
+}
+.rulesImg {
+    height: 200px;
+    width: 200px;
+}
+.game{
+    width: 80%;
+    top:-10vh;
+    height: 300px;
+}
+.paperGame{
+    height: 40px;
+    width: 40px;
+}
+.paperGame img{
+    height: 40px;
+    width: 40px;
+}
+.rockGame{
+    height: 40px;
+    width: 40px;
+}
+.rockGame img{
+    height: 40px;
+    width: 40px;
+}
+
+.scissorsGame{
+    height: 40px;
+    width: 40px;
+}
+.containerGame h1{
+    color:white;
+}
+.scissorsGame img{
+    height: 40px;
+    width: 40px;
+}
+
+.playAgain h1{
+    color:white;
+}
+.playButton{
+    color:hsl(349, 71%, 52%);
+    font-size: 20px;
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playAgain{
+    gap:0px;
+    left:30%;
+    position: absolute;
+    top:80%;
+}
+}
