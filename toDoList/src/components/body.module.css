@@ -1,0 +1,395 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-image: url(./public/artistic-blurry-colorful-wallpaper-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+textarea {
+    resize: none;
+}
+.themeImg{
+    position: absolute;
+    top:5%;
+    left:86%;
+    height: 50px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.headerTextLight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kablammo", system-ui;
+    color:#2d3436;
+    font-size: 50px;
+}
+.headerTextDark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kablammo", system-ui;
+    color:#f5f6fa;
+    font-size: 50px;
+}
+.buttonLight{
+    padding: 20px;
+    height: 30px;
+    font-family: "Alfa Slab One", serif;
+    display: flex;
+    font-weight: 200;
+    font-size: 20px;
+    color:#f5f6fa;
+    background: #EF5350;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #f5f6fa;
+    position: relative;
+}
+.buttonDark{
+    padding: 20px;
+    height: 30px;
+    font-family: "Alfa Slab One", serif;
+    display: flex;
+    font-weight: 200;
+    font-size: 20px;
+    color:#EF5350;
+    background: #f5f6fa;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;  
+    box-shadow: 0 5px 5px #EF5350;
+    position: relative;
+}
+.buttonCreateLight{
+    padding: 20px;
+    height: 30px;
+    font-family: "Alfa Slab One", serif;
+    display: flex;
+    font-weight: 200;
+    font-size: 20px;
+    color:#f5f6fa;
+    background: #EF5350;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #f5f6fa;
+    position: relative;
+}
+.buttonCreateDark{
+    padding: 20px;
+    height: 30px;
+    font-family: "Alfa Slab One", serif;
+    display: flex;
+    font-weight: 200;
+    font-size: 20px;
+    color:#EF5350;
+    background: #f5f6fa;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px; 
+    box-shadow: 0 5px 5px #EF5350;
+    position: relative;
+    
+}
+.buttonDark::after{
+    position: absolute;
+    content: "";
+    top:80%;
+    background-color: #EF5350;
+    width: 0%;
+    height: 2px;
+    transition:  width 2s ease;
+    transform: translateX(-50%);
+    left:50%;
+    transform-origin: center;
+}
+.buttonDark:hover::after{
+    width: 80%;
+}
+.buttonLight::after{
+    position: absolute;
+    content: "";
+    top:80%;
+    background-color: #f5f6fa;
+    width: 0%;
+    height: 2px;
+    transition:  width 2s ease;
+    transform: translateX(-50%);
+    left:50%;
+    transform-origin: center;
+}
+.buttonLight:hover::after{
+    width: 80%;
+}
+.buttonCreateDark:after{
+    position: absolute;
+    content: "";
+    top:80%;
+    transform: translateX(-50%);
+    left:50%;
+    background-color: #EF5350;
+    width: 0%;
+    height: 2px;
+    transition:  width 2s ease;
+    transform-origin: center;
+    
+}
+.buttonCreateLight::after{
+    position: absolute;
+    content: "";
+    top:80%;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #f5f6fa;
+    width: 0%;
+    height: 2px;
+    transition:  width 2s ease;
+    transform-origin: center;
+}
+.buttonCreateLight:hover::after{
+    
+    width: 90%;
+}
+.buttonCreateDark:hover::after{
+    transform-origin: center;
+    width: 90%;
+}
+.buttonCreateLight:active{
+    transform: translateY(2px);
+    box-shadow:0 3px 3px #f5f6fa;
+}
+.buttonCreateDark:active {
+    transform: translateY(2px);
+    box-shadow:0 3px 3px #EF5350;
+}
+.buttonDark:active{
+    transform: translateY(2px);
+    box-shadow:0 3px 3px #EF5350; 
+}
+.buttonLight:active{
+    transform: translateY(2px);
+    box-shadow:0 3px 3px #f5f6fa;
+}
+.windowLight{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    transform: translateX(-50%);
+    top:20%;
+    transform: translateZ(-20%);
+    left:50%;
+    background: linear-gradient(207deg, rgba(225, 245, 254, 1) 0%, rgba(225, 190, 231, 1) 35%, rgba(225, 245, 254, 1) 100%);    z-index: 10;
+    border-radius: 40px;
+}
+.window{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    transform: translateX(-50%);
+    top:20%;
+    transform: translateZ(-20%);
+    left:50%;
+    background:rgb(219, 219, 219);
+    z-index: 10;
+    border-radius: 40px;
+    }
+.windowContent{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.windowContent h1{
+    font-family: "Kablammo", system-ui;
+        color:#2d3436;
+}
+.widowContentText{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+    flex-direction: column;
+}
+.widowContentText div h1{
+    font-family: "Kablammo", system-ui;
+    color:#2d3436;    
+}
+.closeWindow{
+    height: 30px;
+    position: absolute;
+    left:90%;
+    top:5%;
+}
+.inputTitle{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    box-shadow: 0px 5px 5px black;
+}
+.textareaDescription{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 5px black;   
+} 
+.priority{
+    padding: 10px;
+    border-radius: 10px;  
+}
+.butonCreate{
+    position: absolute;
+    left:70%;
+    top:82%;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    font-family: "Kablammo", system-ui;
+    color:#f5f6fa;
+    background:#19c233 ;
+    font-size: 20px;
+}
+.gridAss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 50px;
+}
+.assignmentLight{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    background: linear-gradient(207deg,rgba(225, 245, 254, 1) 0%, rgba(190, 201, 231, 1) 47%, rgba(225, 245, 254, 1) 100%);
+    border-radius: 40px;
+}
+.assignmentLight h1{
+        font-family: "Kablammo", system-ui; 
+}
+.assignmentDark h1{
+        font-family: "Kablammo", system-ui; 
+}
+.assignmentDark{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    background: linear-gradient(207deg,rgba(225, 245, 254, 1) 0%, rgba(190, 201, 231, 1) 47%, rgba(225, 245, 254, 1) 100%);
+    border-radius: 40px;
+}
+.switch{
+    position: relative;
+    width: 60px;
+    height: 50px;
+}
+.switch input{
+    opacity:1;
+}
+.slider{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 34px;
+    background-color: hsl(226, 11%, 37%);
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left:4px;
+    bottom: 0px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+.competed:checked + .slider{
+    background-color: hsl(3, 86%, 64%);
+}
+.competed:focus + .slider{
+    box-shadow:  0 0 1px #2196F3;
+}
+.competed:checked +.slider:before{
+    transform: translateX(26px);
+}
+.delete{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    position: relative;
+    top:-10%;
+    left:80%;
+}
+.delete img{
+    height: 40px;
+    width: 40px;  
+}
+
+@media screen and (max-width:480px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .header{
+        gap:10px;
+    }
+    .headerTextLight, .headerTextDark{
+        font-size: 30px;
+    }
+    .window{
+        width: 90%;
+        height: 60%;
+        transform: translateX(-50%);
+        top:30%;
+        transform: translateZ(-30%);
+        left:50%;
+    }
+    .windowContent h1{
+        font-size: 20px;
+    }
+    .assignmentLight{
+        width: 350px;
+    }
+    .assignmentDark{
+        width: 350px;  
+    }
+    .gridAss{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+}
