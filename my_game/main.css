@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+#board{
+    background-color: black;
+    position: relative;
+    top:100px;
+}
