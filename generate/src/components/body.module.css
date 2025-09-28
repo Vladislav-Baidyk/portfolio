@@ -1,0 +1,438 @@
+body{
+    background-image: url("/public/background-desktop.png");
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.line{
+    position: absolute;
+    left:0;
+}
+.circle{
+    position: absolute;
+    top:-13%;
+    left:5%;
+}
+.bottomLine{
+    position: absolute;
+    top:100%;
+    left:0;
+}
+.topLine{
+    position: absolute;
+    top:10%;
+    left:72%;
+}
+.body{
+    position: relative;
+    top:200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bodyContent{
+    width: 100%;
+}
+.logo{
+    width: 350px;
+}
+.headerText{
+    gap:0px;
+    display: flex;
+    flex-direction: column;
+     
+}
+.headerText h1{
+    color:hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 900;
+}
+.headerText p{
+    color:hsl(252, 6%, 83%);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.bodyForm{
+    padding: 40px;
+    text-align: left;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+   
+}
+.upload{
+    height: 200px;
+    gap:10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.upload label{
+    display: flex;
+    font-size: 20px;
+    color:hsl(0, 0%, 100%);
+    
+}
+.uploadForm{
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 150%;
+    border: 2px dashed hsl(245, 15%, 58%);
+}
+.uploadFormError{
+        height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    width: 150%;
+    border: 2px dashed  hsl(7, 71%, 60%);
+}
+.uploadFormError input{
+    width: 70px;
+    height: 70px;
+}
+.uploadForm input{
+    width: 70px;
+    height: 70px;
+}
+.inputUpload{
+    position: relative;
+    left:44%;
+    top:0%;
+    opacity: 0;
+    z-index: 1;
+    
+}
+.iconUpload{
+    height: 50px;
+    width: 50px;
+    top:40px;
+    z-index: 0;
+    border-radius: 10px;
+    border: 1px solid hsl(245, 15%, 58%);
+    position: relative;
+    left: 30%;
+    
+}
+.iconUploadError{
+        height: 50px;
+    width: 50px;
+    top:40px;
+    z-index: 0;
+    border-radius: 10px;
+    border: 1px solid  hsl(7, 71%, 60%);
+    position: relative;
+    left: 30%;
+}
+.uploadFormError  p{
+        display: flex;
+    justify-content: center;
+    text-align: center;
+    color: hsl(7, 71%, 60%);
+}
+.uploadForm p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:hsl(252, 6%, 83%);
+}
+.upload p{
+    display: flex;
+    align-items: center;
+    
+    color: hsl(245, 15%, 58%)   ;
+    font-size: 12px;
+}   
+.inputBox:nth-child(3){
+   margin-top:50px;
+}
+.inputBox:nth-child(4){
+    margin-top:50px;
+}
+.inputBox{
+    position: relative;
+    left:-3%;
+    gap:10px    ;
+    z-index: 1;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column; 
+}
+.inputBox label{
+    font-size: 20px;
+    display: flex;
+    color: hsl(0, 0%, 100%)
+}
+.inputTextWrong{
+    color:hsl(7, 88%, 67%);
+    border-radius: 10px;
+    border: 3px solid hsl(7, 71%, 60%);
+    padding: 28px;
+    width: 190%;
+    background: transparent;
+}
+.inputText{
+    color:hsl(245, 15%, 58%);
+    border-radius: 10px;
+    border: 1px solid hsl(245, 15%, 58%);
+    padding: 28px;
+    width: 190%;
+    background: transparent;
+}
+.click{
+    z-index: 1;
+}
+.click button{
+        padding: 20px;
+    background-color:  hsl(7, 88%, 67%);
+    border-radius: 10px;
+    border:none;
+    font-weight: 900;
+    font-size: 20px;
+    position: relative;
+    top:50px;
+    width: 170%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+    gap:10px;
+    left:10%;
+    justify-content: center;
+}
+.buttons p{
+    border-radius: 10px;
+    color:hsl(0, 3%, 68%);
+    background-color: hsl(245, 19%, 35%);
+    min-width: 80px;
+    text-decoration: underline;
+}
+
+.inputChange{
+    position: relative;
+    left:-19%;
+    top:25px;
+    opacity: 0;
+    z-index: 1;
+}
+.boxTicket {
+
+    width: 600px;
+    background-image: url("/public/pattern-ticket.svg");
+    height: 280px;
+    background-repeat: no-repeat;
+}
+.boxTicketContent{
+    display: flex;
+    flex-direction: row;
+}
+.boxTicketLeft {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  padding: 30px;
+}
+.boxTicketLeft p{
+    color:hsl(245, 15%, 58%);
+    font-size: 20px;
+}
+.boxTicketBot{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+}
+.boxTicketBotText{
+    display: flex;
+    flex-direction: column;
+}
+.boxTicketBotName{
+    color:hsl(252, 6%, 83%);
+}
+.profileImage{
+    position: relative;
+    left:0%;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.boxTicketRight{
+    position: relative;
+    top:10px;
+    left:110px;
+    font-size: 30px;
+    color:hsl(245, 15%, 58%);
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+}
+@media screen and (max-width:480px) {
+   .bodyContainer {
+        background-image: url("/background-mobile.png");
+        height: auto;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .line, .circle, .bottomLine, .topLine {
+        display: none;
+    }
+    .body {
+        top: 50px;
+        padding: 0 15px;
+    }
+    .logo {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .headerText h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .headerText p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    
+    .bodyForm {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .upload {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .uploadForm, .uploadFormError {
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+    }
+    
+    .inputUpload {
+        left: 35%;
+    }
+    
+    .iconUpload, .iconUploadError {
+        left: 25%;
+        top: 20px;
+    }
+    
+    .inputBox {
+        left: 0;
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .inputText, .inputTextWrong {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    .inputBox label {
+        font-size: 16px;
+    }
+    
+    .inputBox:nth-child(3), .inputBox:nth-child(4) {
+        margin-top: 30px;
+    }
+    
+    .click button {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+        top: 30px;
+    }
+    
+    .buttons {
+        left: 0;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .buttons p {
+        min-width: 60px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .upload p {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .boxTicket {
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .boxTicketContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .boxTicketLeft {
+        padding: 15px;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .boxTicketLeft p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .boxTicketBot {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .profileImage {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .boxTicketBotName {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .boxTicketRight {
+        display: none;
+    }
+    
+    .inputChange {
+        left: -30%;
+        top: 15px;
+    }
+}
