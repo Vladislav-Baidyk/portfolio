@@ -1,0 +1,242 @@
+.content{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerDark{
+    display: flex;
+    justify-content: center;
+    background: hsl(225, 23%, 24%);
+    padding: 10px;
+    width: 80vw;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.headerSun{
+    display: flex;
+    justify-content: center;
+    background:hsl(0, 0%, 93%);
+    padding: 10px;
+    width: 80vw;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.darkLogo{
+   
+    filter: brightness(0) invert(1);
+}
+
+.moonButton{
+    border-radius:10px ;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    justify-content: center;
+    background: hsl(226, 11%, 37%);
+}
+.sunButton{
+     
+    border-radius:10px ;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    justify-content: center;
+    background: hsl(217, 61%, 90%);
+}
+.sunButton img{
+    filter: brightness(100) invert(1);
+    
+}
+.grid{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.headerDarkGrid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerLightGrid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.listDark{
+    color:hsl(0, 0%, 93%);
+}
+.listLight{
+    color: hsl(227, 75%, 14%);
+}
+.gridContent{
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.boxDark {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 78%);
+    background: hsl(225, 23%, 24%);
+    width: 400px;
+    
+}
+.boxLight{
+        height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid hsl(226, 11%, 37%);
+    background: hsl(0, 0%, 93%);
+    width: 400px;
+}
+.boxContentDark{
+    padding: 20px;
+}
+.boxContentLight{
+    padding: 20px;
+}
+.boxStart{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-direction: row;
+}
+.textDark h1 {
+   color:hsl(0, 0%, 93%);
+   font-size: 20px;
+}
+.textDark p {
+    color:hsl(0, 0%, 78%);
+    font-size: 16px;
+}
+.textLight h1 {
+    color:hsl(227, 75%, 14%);
+    font-size: 20px;
+}
+.textLight p {
+    color:hsl(225, 23%, 24%);
+    font-size: 16px;
+}
+.boxEnd{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: hsl(226, 11%, 37%);
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider{
+    background-color: hsl(3, 86%, 64%);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked +.slider:before{
+    transform: translateX(26px);
+}
+.buttonHeader{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.active {
+      height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+   min-width: 50px;
+   text-align: center;
+   border: none;
+   background-color: hsl(3, 71%, 56%);
+   color:hsl(200, 60%, 99%);
+}
+.noActive{
+          height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+   min-width: 50px;
+   text-align: center;
+   border: none;
+   background-color: hsl(200, 60%, 99%);
+   color:hsl(227, 75%, 14%);
+}
+.removeLight{
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    border:1px solid hsl(226, 11%, 37%);
+    color:hsl(227, 75%, 14%);
+}
+.removeDark{
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    border:1px solid hsl(226, 11%, 37%);
+    color:hsl(200, 60%, 99%);
+}
+@media screen and (max-width:480px) {
+    .listDark{
+        font-size: 20px;
+    }
+    .listLight{
+     font-size: 20px;   
+    }
+    .active{
+        height: 30px;
+    }
+    .noActive{
+        height: 30px;
+    }
+}

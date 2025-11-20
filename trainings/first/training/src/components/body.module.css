@@ -1,0 +1,374 @@
+.container{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100%;
+}
+.blackContainer{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100%;
+    opacity: 0.1;
+}
+.left{
+    width: 75%; 
+    height: inherit;
+}
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: inherit;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    font-size:12px ;
+    color:hsl(14, 25%, 72%);
+    
+}
+.name{
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: bolder;
+}
+.price{
+    font-size: 15px;
+    font-weight: 600;
+    color:hsl(14, 86%, 42%);
+}
+.addMinus{
+    background-color: hsl(14, 86%, 42%);
+    top:-30px;
+    left:40px;
+    display: flex;
+    position: relative;
+    width:  100px;
+    justify-content: space-around;
+    border-radius: 40px;
+    border:none;
+    padding: 10px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    color: hsl(20, 50%, 98%);
+    flex-direction: row;
+}
+.addMinus button{
+    background: none;
+    display: flex;
+    border-radius: 100px;
+    text-align: center;
+    border: 1px solid hsl(20, 50%, 98%);
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.boxText{
+    position: relative;
+    top:-20px;
+    font-family: "Red Hat Text", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+   
+ 
+}
+.addToTheCart{
+    font-size: 14px;
+    font-family: "Red Hat Text", sans-serif;
+    background-color: hsl(20, 50%, 98%);
+    top:-30px;
+    left:40px;
+    display: flex;
+    position: relative;
+    width:  100px;
+    justify-content: space-around;
+    border-radius: 40px;
+    border: 1px solid hsl(14, 86%, 42%);
+    padding: 10px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px hsl(14, 86%, 42%);
+    flex-direction: row;
+}
+.borderImg{
+    height: 200px;
+    width: 200px;
+    border: 2px solid hsl(14, 86%, 42%);
+    border-radius: 20px;
+}
+.borderNone{
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+.right p {
+    color:hsl(14, 86%, 42%);
+    font-size: 30px;
+    font-weight: 700;
+}
+.nothing{
+
+    display:block;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+.nothing p{
+    color:hsl(12, 20%, 44%);
+    font-size: 10px;
+    font-weight: 700;
+}
+.rigthText{
+    padding-top: 10px;
+}
+.orderBox{
+    margin-top: 20px;
+    padding: 10px;
+    width: 150%;
+    max-height: 50px;
+    justify-content: space-between;
+    display: flex;
+}
+.orderBoxStart{
+    display: flex;
+    flex-direction: column;
+}
+.orderBoxStartText{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+}
+.orderBoxStart p{
+    color:black;
+    font-size: 15px;
+}
+.orderBoxStartText p:nth-child(1){
+    color:hsl(14, 86%, 42%);
+}
+.orderBoxStartText p{
+    color:hsl(7, 20%, 60%);
+}
+.orderBoxEnd {
+    display: flex;
+    justify-content: center;
+}
+
+.orderBoxEnd button{
+    height: 40px;
+    width: 40px;
+    border: none;
+
+}
+.Total{
+    width: 200%;
+    position: relative;
+    left:63%;
+    top:5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:150px;
+}
+.Total p:nth-child(1){
+    font-size: 20px;
+    color:hsl(0, 0%, 0%);
+    font-weight: lighter;
+}
+.Total p:nth-child(2){
+    font-size: 25px;
+    color:black;
+}
+.tree{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    position: relative;
+    left:50%;
+    align-items: center;
+    justify-content: center;
+    top:5vh;
+}
+.tree p {
+    font-size: 15px;
+    color:hsl(0, 0%, 0%);
+    font-weight: lighter;
+}
+.tree span{
+    color:black;
+    font-weight: bold;
+}
+.submit{
+    background-color: hsl(14, 86%, 42%);
+    color:hsl(20, 50%, 98%);
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    border:none;
+    left:50%;
+    top:5vh;
+}
+.orderFinish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    min-height: 80%;
+    position:absolute;
+    text-align: center;
+    left:35%;
+    top:30%;
+    background-color: hsl(30, 5%, 92%);
+    border-radius: 20px;
+}
+.orderFinishText{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+}
+.orderFinishBox{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:50px;
+    border: 1px solid hsl(159, 69%, 38%);
+    padding: 10px;
+    border-radius: 20px;
+}
+.orderFinishStart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.orderFinishStart img{
+    height: 80px;
+    border-radius: 10px;
+}
+.orderFinishStartText{
+    display: flex;
+    flex-direction: column;
+}
+.orderFinishStartTextEnd{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.TotalFinish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:150px;
+}
+.TotalFinish p:nth-child(2){
+    font-weight: bolder;
+}
+.startNewOdrer{
+    background-color: hsl(14, 86%, 42%);
+    color:hsl(20, 50%, 98%);
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    border:none;}
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        display: flex;
+        gap:20px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .orderBox{
+        width: 100%;
+    }
+    .Total{
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .tree{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:0;
+    top:0;
+    align-items: center;
+    justify-content: center;
+
+}
+    .submit{
+    background-color: hsl(14, 86%, 42%);
+    color:hsl(20, 50%, 98%);
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    border:none;
+    left:0;
+    top:0;
+    }      
+    .addMinus{
+        left:30%;
+    }
+    .orderFinish{
+        top:0;
+        left:0;
+    }
+    .addToTheCart{
+        left:30%;
+    }
+    .box{
+        width: 300px;
+    }
+    .borderImg{
+        width: 300px;
+    }
+    .borderNone{
+        width: 300px;
+    }
+}

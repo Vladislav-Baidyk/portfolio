@@ -1,0 +1,52 @@
+{
+ "products" :[
+    {
+      "id": 1,
+      "name": "Chocolate Cake",
+      "category": "Cakes",
+      "price": 12.99
+    },
+    {
+      "id": 2,
+      "name": "Vanilla Cupcake",
+      "category": "Cupcakes",
+      "price": 3.50
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Cheesecake",
+      "category": "Cheesecakes",
+      "price": 15.75
+    },
+    {
+      "id": 4,
+      "name": "Blueberry Muffin",
+      "category": "Muffins",
+      "price": 2.99
+    },
+    {
+      "id": 5,
+      "name": "Apple Pie",
+      "category": "Pies",
+      "price": 10.50
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Chip Cookie",
+      "category": "Cookies",
+      "price": 1.25
+    },
+    {
+      "id": 7,
+      "name": "Lemon Tart",
+      "category": "Tarts",
+      "price": 8.75
+    },
+    {
+      "id": 8,
+      "name": "Croissant",
+      "category": "Pastries",
+      "price": 2.25
+    }
+  ]
+}

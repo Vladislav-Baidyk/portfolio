@@ -1,0 +1,29 @@
+body.dark{
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  width: 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+body.light{
+    padding: 0;
+  margin: 0;
+  background:  hsl(217, 61%, 90%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+}
+
