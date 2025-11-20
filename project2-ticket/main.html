@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+        <img class="lines" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/pattern-lines.svg" alt="lines">
+        <img class="circle" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/pattern-circle.svg" alt="circle">
+        <img class="line-top" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg" alt="">
+        <img class="lines-bot" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    <div class="container">
+
+        <div class="header-logo">
+            <img src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/logo-mark.svg" alt="logo">
+            <h1>Coding Conf</h1>
+        
+        </div><!--header-logo div end-->
+
+        <div class="container-main">
+            <div class="container-main-header">
+                <h1>Your Journey to Coding Conf</br>
+                    2025 Starts Here!</h1>
+                <p>Secure your spot at the next year's biggest coding reference</p>
+            </div><!--container-main-header-->
+
+            <div class="container-main-form" id="container-main-form">
+                <form>
+                    <label for="upload">Upload Avatar</label>
+                    <input class="fileUpload" id="uploadButton" type="file"  accept=".jpg, .png">
+                   
+                    <label class="img-upload-container" id="img-upload-container" for="uploadButton"><img class="img-upload" id="upload-logo" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/icon-upload.svg" alt="">
+                    
+                        <p>Drag and drop or click to upload</p></label>
+                   
+                        <p id="text-upload" style="font-size: 14px;color:hsl(252, 6%, 83%);display: flex;align-items: center;"><img src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/icon-info.svg"
+                         alt="">Upload  your photo (JPG or PNG,max size: 500KB).</p>
+                  
+                         <label for="name">Full Name</label>
+                   
+                         <input class="text" type="text" name="full_name" id="name">
+                    
+                         <p id="name-error"></p>
+                    
+                         <label for="email">Email Address</label>
+
+                    <input class="text" type="email" name="email" id="email" placeholder="example@gmail.com">
+        
+                    <p id="email-error"></p>
+                    <label for="GitHub">GitHub  Username</label>
+
+                    <input class="text" type="text" name="username" id="username" placeholder="@yourusername">
+
+                    <p id="username-error"></p>
+                </form>
+                 <button onclick="submit()" class="submit">Generate My Ticket</button>
+
+            </div><!--container main form -->
+
+
+
+          <div class="ticket" id="ticket">
+                <img class="ticket-background" src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/pattern-ticket.svg" alt="" id="ticket-picture-background">
+                <div class="ticket-content">
+                    <div class="ticket-content-left">
+                    <div class="ticket-content-header">
+                    <img src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/logo-mark.svg" id="logo-ticket" class="logo-ticket" alt="">
+                    <p>Coding Conf</p>
+                    </div><!--ticket content header div end -->
+                    <div class="ticket-content-left-main">
+                        <p>Jan 31, 2025 / Austin, TX </p>
+                        </div><!--ticket-content left main div end-->
+                        <div class="ticket-content-bottm">
+                            <div class="ticket-content-bottm-left">
+                                <img src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/logo-mark.svg" id="profile-ava" alt="">
+                            </div><!--ticket content-bottm left div end-->
+                                <div class="ticket-content-bottm-right">
+                                    <p id="name-ticket">Jonatan Kristof</p>
+                                    <div class="ticket-content-bottm-right-content">
+                                        <img src="conference-ticket-generator-main/conference-ticket-generator-main/assets/images/icon-github.svg" id="github-log0" alt="">
+                                        <p id="github-ticket">@random</p>
+                                    </div><!--ticket-content-bottm-right-content div end-->
+                                </div><!--ticket-content-bottm-right div end-->
+                        </div><!--ticket-content-bottm div end-->
+                        </div><!--ticket-content-left div end-->
+                        <div class="ticket-content-right">
+                                <p id="text-code">#01609</p>
+                        </div><!--ticket content right-->
+                </div><!--ticket-content div end-->
+            
+            </div><!--ticket-end-->
+
+        </div><!--container main div end-->
+
+
+    </div><!--container div end-->
+</body>
+<script src="main.js"></script>
+</html>

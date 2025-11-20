@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #020038;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Noto Sans;
+    align-items: center;
+}
+
+.header-name{
+    position: relative;
+    top:5%;
+    display: flex;
+    background-color:hsl(226, 25%, 17%);
+    width: 80%;
+     border-radius: 10px;
+    padding: 10px;
+}
+.header-name-context{   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-name-first-part{
+    display: flex;
+    justify-content: flex-start ;
+}
+.header-name-second-part{
+    display: flex;
+    justify-content: flex-end;
+}
+.buttn-theme{
+    height: 40px;
+    width: 40px;
+    background-color: hsl(226, 11%, 37%);
+   border-radius: 10px;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.grid-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.grid-header-name{
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(200, 60%, 99%);
+    font-size:16px;
+}
+.grid-header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+}
+.grid-header-buttons button{
+    padding:10px 20px 10px 20px;
+    color: hsl(0, 0%, 93%);
+    border:1px solid hsl(0, 0%, 93%);
+    border-radius: 20px;
+    background-color:hsl(225, 23%, 24%);
+    min-width: 50px;
+}
+.grid-header-buttons button.active{
+    background-color: hsl(3, 71%, 56%);
+    color:hsl(227, 75%, 14%);
+}
+.grid{
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid-content{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+}
+.box{
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid hsl(226, 11%, 37%);
+    max-width: 320px;
+    border-radius:20px;
+    min-height: 170px;
+}
+.box-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.high-part{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.box-logo img{
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.box-text p {
+    color: hsl(0, 0%, 78%);
+}
+.low-part{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap:150px;
+}
+.low-part-start{
+    display: flex;
+    justify-content: start;
+}
+.low-part-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.remove{
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid hsl(226, 11%, 37%);
+    color:hsl(0, 0%, 93%);
+    padding: 7px 10px 7px 10px;
+    border-radius: 20px;
+}
+.toggle-switch{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.toggle-switch input:checked+.slider {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(26px);
+}
+/* white theme styles */
+.white-theme{
+    background:linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+.header-name-white{
+    background-color:hsl(217, 61%, 90%);
+}
+.buttn-theme-white{
+    background-color: hsl(217, 61%, 90%);
+}
+
+/* end of white theme styles */

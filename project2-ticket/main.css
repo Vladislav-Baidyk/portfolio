@@ -1,0 +1,184 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(conference-ticket-generator-main/conference-ticket-generator-main/assets/images/background-desktop.png);
+    font-family: "Inconsolata", monospace;
+    background-size: cover;
+    font-size: 20px;
+    display: flex;
+    width: 1440px;
+    overflow-x: hidden;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.lines{
+    position: absolute;
+    z-index: -2;
+}
+.line-top{
+    position: absolute;
+    left:70%;
+    top:10%;
+    z-index: -2;
+}
+.circle{
+    position: absolute;
+    top:-14%;
+    left:7%;
+    z-index: -2;
+}
+.lines-bot{
+    position: absolute;
+    top:90%;
+    left:0%;
+    z-index: -2;
+}
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+}
+.header-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-main{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-main-header p {
+    color: hsl(252, 6%, 83%);
+}
+.container-main-form {
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-main-form form{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+.container-main-form form .text{
+    background-color: transparent;
+    padding:15px;
+    border:1px solid hsl(245, 15%, 58%);
+    border-radius:20px;
+    color:hsl(245, 15%, 58%) ;
+}
+
+.fileUpload{
+    display: none;
+}
+.img-upload-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border:1px dashed hsl(245, 15%, 58%);
+    height: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    color: hsl(245, 15%, 58%);
+    font-size: 16px;
+}
+.img-upload{
+    border:1px solid hsl(245, 15%, 58%); 
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: hsl(7, 88%, 67%);
+    width: 100%;
+    height: 50px;
+    color:hsl(248, 70%, 10%);
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius:10px;
+}
+.ticket{
+    margin-top: 200px;
+    display:none;
+    margin-right: -150px;
+    width: 100%;
+}
+.ticket-content{
+    display: flex;
+    height: 300px;
+    position: absolute;
+    left:40%;
+    top:57%;
+    width: 100%;
+}
+
+.ticket-content-header{
+    gap: 20px;
+    display: flex;
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+}
+.ticket-content-left{
+    font-size: 14px;
+    color: hsl(245, 15%, 58%);
+}
+.ticket-content-left-main{
+    position: absolute;
+    left:4%;
+    top:19%;
+}
+.ticket-content-bottm {
+    gap:30px;
+    display: flex;
+    margin-top: 130px;
+}
+.ticket-content-bottm-left img{
+    height: 70px;
+    width: 70px;
+}
+.ticket-content-bottm-right{
+    display: flex;
+    flex-direction: column;
+    gap:-10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 600;
+}
+.ticket-content-bottm-right-content{
+    position: relative;
+    top:-40px;
+    display: flex;
+    color: hsl(245, 15%, 58%);
+    font-size: 14px;
+}
+.ticket-content-right{
+    position: absolute;
+    left:27%;
+    top:30%;
+    transform: rotate(90deg);
+    font-size: 40px;
+    color:  hsl(245, 15%, 58%);
+}

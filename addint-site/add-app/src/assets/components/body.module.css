@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;   
+    background-color: hsl(148, 38%, 91%);
+    color: hsl(186, 15%, 59%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
